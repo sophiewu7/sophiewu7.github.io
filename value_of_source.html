@@ -106,7 +106,7 @@
                     <div>
                         <img src="img/upwork.jpg" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
                     </div>
-                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#upwork1">View Review Detail</button>  
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#upwork1" onclick="markOrder(this, 'upwork1')">View Review Detail</button>  
                     <!-- Modal -->
                     <div class="modal fade" id="upwork1" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
@@ -153,7 +153,7 @@
                     <div>
                         <img src="img/fiverr.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
                     </div>
-                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#fiverr1">View Review Detail</button>  
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#fiverr1" onclick="markOrder(this, 'fiverr1')">View Review Detail</button>  
                     <!-- Modal -->
                     <div class="modal fade" id="fiverr1" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
@@ -200,7 +200,7 @@
                     <div>
                         <img src="img/peopleperhour.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
                     </div>
-                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#ppp1">View Review Detail</button>  
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#ppp1" onclick="markOrder(this, 'ppp1')">View Review Detail</button>  
                     <!-- Modal -->
                     <div class="modal fade" id="ppp1" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
@@ -1327,6 +1327,20 @@
     function collapseBio() {
         document.getElementById("shortBio").style.display = "block";
         document.getElementById("fullBio").style.display = "none";
+    }
+
+    let clickCount = 0;
+    const orders = {};
+
+    function markOrder(element, id) {
+        clickCount++;
+        orders[id] = clickCount;
+
+        // Update UI to show the order number
+        element.innerHTML = `View Review Detail (${clickCount})`;
+        element.disabled = true;
+        // Optionally, display all orders in console or elsewhere
+        console.log(orders);
     }
 </script>
 
