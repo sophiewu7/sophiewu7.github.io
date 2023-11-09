@@ -19,6 +19,41 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+        
+        .rating-box {
+            width: 130px;
+            height: 130px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #FBC02D;
+            color: #fff;
+        }
+        
+        .rating-label {
+            font-weight: bold;
+            padding-right: 2rem;
+        }
+        
+        td {
+            padding-bottom: 10px;
+        }
+        
+        .star-active {
+            color: #FBC02D;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .star-active:hover {
+            color: #F9A825;
+            cursor: pointer;
+        }
+        
+        .star-inactive {
+            color: #CFD8DC;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }        
     </style>
 </head>
 <body>
@@ -95,54 +130,99 @@
     </div>
 </div>
 
-<!-- Overall Rating Summary Section -->
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-6">
-            <div class="text-center">
-                <h2>Overall Platform Rating</h2>
-                <p style="font-size: 48px; line-height: 1;">4.98</p>
+<div class="container-fluid pt-5 mx-auto">
+	<div class="row justify-content-center">
+		<div class="col-xl-7 col-lg-8 col-md-10 col-12 text-center mb-5">
+            <div class="row justify-content-left d-flex">
+                <div class="col-md-3 d-flex flex-column">
+                    <div class="rating-box">
+                        <h1 class="pt-4">4.98</h1>
+                        <p class="">out of 5</p>
+                    </div>
+                    <div>
+                        <span class="fa fa-star star-active mx-1"></span>
+                        <span class="fa fa-star star-active mx-1"></span>
+                        <span class="fa fa-star star-active mx-1"></span>
+                        <span class="fa fa-star star-active mx-1"></span>
+                        <span class="fa fa-star-half-alt star-active mx-1"></span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="rating-bar0 justify-content-center">
+                        <table class="text-left mx-auto">
+                            <tr>
+                                <td class="rating-label">Delivery: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Work Quality: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                                    4.98 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Coding and Technical Skills: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Commitment and Cooperation: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Communication: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                                    4.96 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Recommendation and Overall Experience: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Pleasure to Work and Experience: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Recommendation and Satisfaction: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Overall Positivity: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-6">
-            <div class="platform-ratings">
-                <div class="my-2" style="display: flex; align-items: center;">
-                    <h3>Upwork</h3>
-                    <span class="text-warning" style="margin-left: 10px;">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </span>
-                </div>                
-                <div class="my-2" style="display: flex; align-items: center;">
-                    <h3>Fiverr</h3>
-                    <span class="text-warning" style="margin-left: 10px;">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </span>
-                </div> 
-                <div class="my-2" style="display: flex; align-items: center;">
-                    <h3>PeoplePerHour</h3>
-                    <span class="text-warning" style="margin-left: 10px;">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </span>
-                </div> 
-            </div>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
 <!-- Review Cards Section -->
-<div class="container mt-5">
+<div class="container mt-2">
     <div class="row">
         <!-- Upwork Review Card -->
         <div class="col-md-4 mb-4">
