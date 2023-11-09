@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Mamtaz Akter - Developer Profile</title>
+    <style>
+        .platform-ratings h3 {
+            display: inline;
+            margin-right: 10px;
+        }
+        .platform-ratings p {
+            display: inline;
+            color: #f4b400; /* Change color to your liking */
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand font-weight-bold text-primary"></a>
+        <form class="d-flex input-group w-auto">
+        <input
+            type="search"
+            class="form-control rounded"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+        />
+        <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+        </span>
+        </form>
+    </div>
+</nav>
+
+<!-- Developer Profile Section -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Profile Image Placeholder -->
+        <div class="col-md-4 text-center"> <!-- Added text-center for center alignment -->
+            <img src="img/profile_img.jpg" alt="Mamtaz's Profile Picture" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+        </div>        
+        <!-- Profile Information -->
+        <div class="col-md-8">
+            <h1>Mamtaz Akter</h1>
+            <p><strong>Read reviews about Mamtaz on these 3 sites:</strong></p>
+            <div id="aboutSection">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="platform-ratings">
+                            <div class="my-2" style="display: flex; align-items: center;">
+                                <a href="https://www.upwork.com/freelancers/~011bb055a0ee0f52c1" target="_blank">Upwork</a>
+                            </div>                
+                            <div class="my-2" style="display: flex; align-items: center;">
+                                <a href="https://www.fiverr.com/mamtaz01" target="_blank">Fiverr</a>
+                            </div> 
+                            <div class="my-2" style="display: flex; align-items: center;">
+                                <a href="https://www.peopleperhour.com/freelancer/technology-programming/mst_mamtaz-akter-full-stack-web-developer-mern-jwajjmm" target="_blank">PeoplePerHour</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <p class="fs-4 fw-bold">Contact Her</p>
+            <button class="btn btn-primary me-2">Yes</button>
+            <button class="btn btn-secondary">No</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="my-5">
+</div>
+
+<div class="my-5">
+</div>
+
+<div class="my-5">
+</div>
+
+<script>
+    function expandBio() {
+        document.getElementById("shortBio").style.display = "none";
+        document.getElementById("fullBio").style.display = "block";
+    }
+    
+    function collapseBio() {
+        document.getElementById("shortBio").style.display = "block";
+        document.getElementById("fullBio").style.display = "none";
+    }
+</script>
+    
+</body>
+</html>
