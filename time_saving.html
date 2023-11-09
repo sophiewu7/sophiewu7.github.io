@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Mamtaz Akter - Developer Profile</title>
+    <style>
+        .platform-ratings h3 {
+            display: inline;
+            margin-right: 10px;
+        }
+        .platform-ratings p {
+            display: inline;
+            color: #f4b400; /* Change color to your liking */
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand font-weight-bold text-primary">ReviewHub</a>
+        <form class="d-flex input-group w-auto">
+        <input
+            type="search"
+            class="form-control rounded"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+        />
+        <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+        </span>
+        </form>
+    </div>
+</nav>
+
+<!-- Developer Profile Section -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Profile Image Placeholder -->
+        <div class="col-md-4 text-center"> <!-- Added text-center for center alignment -->
+            <img src="img/profile_img.jpg" alt="Mamtaz's Profile Picture" class="img-fluid rounded-circle mb-3" style="width: 300px; height: 300px;">
+        
+            <!-- Contact Button -->
+            <div class="d-flex justify-content-center"> <!-- Flex container for centering the button -->
+                <a href="#.html"> <!-- Replace with your contact page link or mailto link -->
+                    <button class="btn btn-primary mt-2" style="width: 100px;">Contact</button>
+                </a>
+            </div>
+        </div>        
+        <!-- Profile Information -->
+        <div class="col-md-8">
+            <h1>Mamtaz Akter</h1>
+            <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+            <p><strong>Languages:</strong> Bengali, English, Hindi</p>
+            <div id="aboutSection">
+                <p><strong>About Mamtaz:</strong></p>
+                <div id="shortBio">
+                    <p>Hi, I am Mamtaz Akter. I am a full-stack web developer with a vast array of knowledge in many different front-end and back-end languages, responsive frameworks, databases...
+                    <span onclick="expandBio()" style="color: blue; text-decoration: underline; cursor: pointer;">Read more</span></p>
+                </div>                
+                <div id="fullBio" style="display: none;">
+                    <!-- Full biography content -->
+                    <p>Hi, I am Mamtaz Akter. I am a full-stack web developer with a vast array of knowledge in many different front-end and back-end languages, responsive frameworks, databases, and best code practices.</p>
+                    <p>I bring years of research and industry experience to the table and can understand requirements thoroughly, and build the software required by the client in a timely fashion. I also work in blockchain and web3 space and am also proficient in solidity. I have deployed NFT (ERC721), staking, token, and DAFI based smart contracts.
+                    <span onclick="collapseBio()" style="color: blue; text-decoration: underline; cursor: pointer;">Read less</span></p>
+                </div>
+            </div>
+            <!-- Technical Proficiency List -->
+            <div id="skillSection">
+                <p><strong>Skills:</strong></p>
+                <ul>
+                    <li>React.js | NextJs | Redux | MERN</li>
+                    <li>React Native | React Navigation</li>
+                    <li>Node.js | express.js | MongoDB</li>
+                    <li>PHP | Laravel | Mysqli</li>
+                    <li>MySQL | MongoDB | Mongoose</li>
+                    <li>Bootstrap | Material UI | Semantic UI</li>
+                    <li>HTML5 | CSS3 | SASS</li>
+                    <li>Javascript | Jquery | Plugins</li>
+                    <li>NFT Marketplace | NFT smart contract | DAPP</li>
+                    <li>Git | Git Hub | Git Lab -(For Project Repositories)</li>
+                </ul>                
+            </div>
+            <!-- Why Hire Me Section -->
+            <p><strong>Why should you hire me?</strong></p>
+            <p>Quick response 24/7 availability, professional work, revisions until satisfaction.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Overall Rating Summary Section -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <div class="text-center">
+                <h2>Overall Platform Rating</h2>
+                <p style="font-size: 48px; line-height: 1;">4.98</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="platform-ratings">
+                <div class="my-2">
+                    <h3>Upwork</h3>
+                    <p style="font-size: 24px;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+                <div class="my-2">
+                    <h3>Fiverr</h3>
+                    <p style="font-size: 24px;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+                <div class="my-2">
+                    <h3>People Per Hour</h3>
+                    <p style="font-size: 24px;">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Review Cards Section -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Upwork Review Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upwork Summary</h5>
+                    <img src="img/upwork.jpg" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px; position: absolute; top: 20px; right: 20px; z-index: 1;">
+                    <p class="card-text">Mamtaz consistently receives positive feedback for her exceptional web development skills, commitment to work, and efficient delivery. Clients appreciate her clean and neat coding, cooperation, and ease of communication. Many reviewers highly recommend her for future projects, emphasizing her professionalism, punctuality, and skillfulness. Mamtaz consistently exceeds expectations and is praised for her quality work and dedication to meeting deadlines.</p>
+                    <!-- Categories for Summarized Review -->
+                    <ul class="list-unstyled">
+                        <li>Delivery:
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Work Quality:
+                            <p>
+                                4.97 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                            </p>
+                        </li>
+                        <li>Coding and Technical Skills:
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Commitment and Cooperation: :
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Communication:
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Recommendation and Overall Experience: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Pleasure to Work and Experience: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Recommendation and Satisfaction: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Overall Positivity: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Fiverr Review Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fiverr Summary</h5>
+                    <img src="img/fiverr.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px; position: absolute; top: 20px; right: 20px; z-index: 1;">
+                    <p class="card-text">Mamtaz consistently delivers exceptional work in React development, demonstrating high professionalism, responsiveness, and communication skills. Clients appreciate her commitment to customer satisfaction, clean coding, and attention to detail. Mamtaz's ability to understand and address specific needs, coupled with her dedication, has led to numerous successful projects. She is highly recommended for React UI projects, with clients expressing satisfaction with her expertise, efficiency, and cooperative approach.
+                    </p>
+                    <!-- Categories for Summarized Review -->
+                    <ul class="list-unstyled">
+                        <li>Delivery:
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Work Quality:
+                            <p>
+                                4.97 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                            </p>
+                        </li>
+                        <li>Coding and Technical Skills:
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Commitment and Cooperation: :
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Communication:
+                            <p>
+                                4.9 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                            </p>
+                        </li>
+                        <li>Recommendation and Overall Experience: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Pleasure to Work and Experience: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Recommendation and Satisfaction: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Overall Positivity: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- People Per Hour Review Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fiverr Summary</h5>
+                    <img src="img/peopleperhour.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px; position: absolute; top: 20px; right: 20px; z-index: 1;">
+                    <p class="card-text">Mamtaz consistently delivers successful and excellent work as a skillful web developer. Clients express satisfaction with her clean coding, communication skills, and cooperative approach. Working with Mamtaz is described as a good experience, and her skillfulness is highlighted. Multiple reviewers highly recommend her for future projects, emphasizing her professionalism and the quality of her work.
+                    </p>
+                    <!-- Categories for Summarized Review -->
+                    <ul class="list-unstyled">
+                        <li>Delivery:
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Work Quality:
+                            <p>
+                               5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Coding and Technical Skills:
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Commitment and Cooperation: :
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Communication:
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Recommendation and Overall Experience: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Pleasure to Work and Experience: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Recommendation and Satisfaction: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                        <li>Overall Positivity: 
+                            <p>
+                                5.0 <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            </p>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="my-5">
+</div>
+
+<div class="my-5">
+</div>
+
+<div class="my-5">
+</div>
+
+<script>
+    function expandBio() {
+        document.getElementById("shortBio").style.display = "none";
+        document.getElementById("fullBio").style.display = "block";
+    }
+    
+    function collapseBio() {
+        document.getElementById("shortBio").style.display = "block";
+        document.getElementById("fullBio").style.display = "none";
+    }
+</script>
+    
+</body>
+</html>
