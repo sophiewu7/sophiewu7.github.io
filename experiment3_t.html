@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a54bad848a.js" crossorigin="anonymous"></script>
+    <title>Mamtaz Akter - Developer Profile</title>
+    <style>
+        .platform-ratings h3 {
+            display: inline;
+            margin-right: 10px;
+        }
+        .platform-ratings p {
+            display: inline;
+            color: #f4b400; /* Change color to your liking */
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .rating-box {
+            width: 130px;
+            height: 130px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #FBC02D;
+            color: #fff;
+        }
+        
+        .rating-label {
+            font-weight: bold;
+            padding-right: 2rem;
+        }
+        
+        td {
+            padding-bottom: 10px;
+        }
+        
+        .star-active {
+            color: #FBC02D;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .star-active:hover {
+            color: #F9A825;
+            cursor: pointer;
+        }
+        
+        .star-inactive {
+            color: #CFD8DC;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }        
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand font-weight-bold text-primary">ReviewHub</a>
+        <form class="d-flex input-group w-auto">
+        <input
+            type="search"
+            class="form-control rounded"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+        />
+        <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+        </span>
+        </form>
+    </div>
+</nav>
+
+<!-- Developer Profile Section -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Profile Image Placeholder -->
+        <div class="col-md-4 text-center"> <!-- Added text-center for center alignment -->
+            <img src="img/profile_img.jpg" alt="Mamtaz's Profile Picture" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+        </div>        
+        <!-- Profile Information -->
+        <div class="col-md-8">
+            <h1>Mamtaz Akter</h1>
+            <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+            <p><strong>Languages:</strong> Bengali, English, Hindi</p>
+            <div id="aboutSection">
+                <p><strong>About Mamtaz:</strong></p>
+                <div>
+                    <p>Hi, I am Mamtaz Akter. I am a full-stack web developer with a vast array of knowledge in many different front-end and back-end languages, responsive frameworks, databases and best code practices.</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid pt-5 mx-auto">
+	<div class="row justify-content-center">
+		<div class="col-xl-7 col-lg-8 col-md-10 col-12 text-center mb-5">
+            <div class="row justify-content-left d-flex">
+                <div class="col-md-3 d-flex flex-column">
+                    <div class="rating-box">
+                        <h1 class="pt-4">4.98</h1>
+                        <p class="">out of 5</p>
+                    </div>
+                    <div>
+                        <span class="fa fa-star star-active mx-1"></span>
+                        <span class="fa fa-star star-active mx-1"></span>
+                        <span class="fa fa-star star-active mx-1"></span>
+                        <span class="fa fa-star star-active mx-1"></span>
+                        <span class="fa fa-star-half-alt star-active mx-1"></span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="rating-bar0 justify-content-center">
+                        <table class="text-left mx-auto">
+                            <tr>
+                                <td class="rating-label">Delivery: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Work Quality: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                                    4.98 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Coding and Technical Skills: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Commitment and Cooperation: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Communication: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                                    4.96 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Recommendation and Overall Experience: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Pleasure to Work and Experience: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Recommendation and Satisfaction: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Overall Positivity: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<!-- Review Cards Section -->
+<div class="container mt-5">
+    <div class="row card-container">
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/upwork.jpg" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Upwork
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#upwork1" onclick="markOrder(this, 'upwork1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="upwork1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">May 13, 2023 - May 18, 2023</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "Super fast delivery and excellent work by Mamtaz. Wonderful coding knowledge and very committed web developer. Easy to communicate with her. Truly exceptional and highly recommended!"
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $150
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/fiverr.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Fiverr
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#fiverr1" onclick="markOrder(this, 'fiverr1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="fiverr1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">1 month ago</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "As last time Mamtaz's team delivered well recreated react components that required a lot of tweaking, detailed work and well developed front-end craft. Communication is high level which I do appreciate even more. I do recommend to everybody, me myself for sure will be back."
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $80-$350
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/peopleperhour.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        PeoplePerHour
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#ppp1" onclick="markOrder(this, 'ppp1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="ppp1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">22 Dec 2022</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "Another successful delivery from Mamtaz. She is such a wonderful and skillful web developer to work with. Very cooperative and helpful."
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $15
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/freelancer.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        freelancer.com
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#flc1" onclick="markOrder(this, 'flc1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="flc1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">13 Dec 2022</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "Excellent work done by Mamtaz. She is very good developer with clean code. It was an wonderful experience. Highly recommended."
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $15
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/gun.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Gun.io
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#gun1" onclick="markOrder(this, 'gun1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="gun1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">Jan 2, 2023 - May 14, 2023</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "All good."
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $816.66
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/guru.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Guru.com
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#guru1" onclick="markOrder(this, 'guru1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="guru1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">2 months ago</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "Mamtaz was extremely responsive and polite, and ultimately delivered something very high value for the money. We appreciated working with her."
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $80-$350
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/lemon.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Lemon.io
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#lemon1" onclick="markOrder(this, 'lemon1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="lemon1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">6 days ago</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "I am absolutely delighted with the service provided by mamtaz01 on the creation of several sliders in React. From the start, mamtaz01 demonstrated great professionalism, taking the time to understand my specific needs and proposing effective solutions. Communication was smooth and responsive throughout the project, and mamtaz01 was always available to answer my questions and make any necessary changes. She demonstrated great patience and impressive attention to detail, which greatly contributed to the success of the project. I am fully satisfied with the final result, and I will not hesitate to call on mamtaz01 again for future projects in React. I highly recommend his services. Thank you."
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $80-$350
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/linkedin.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Linkedin
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#linkedin1" onclick="markOrder(this, 'linkedin1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="linkedin1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">02 Dec 2022</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "Very good experience and happy with the delivery by Mamtaz. She is very skillful with clean coding. Communication with her was excellent. She is very cooperative to deal with. Highly recommended"
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $15
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/clutch.jpg" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Clutch.co
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#clutch1" onclick="markOrder(this, 'clutch1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="clutch1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">May 9, 2023 - May 13, 2023</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "Mamtaz is an experienced and skillful developer. Excellent work commitment. Highly recommended"
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $80
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/toptal.png" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Toptal
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#toptal1" onclick="markOrder(this, 'toptal1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="toptal1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">Jan 20, 2023 - Jan 24, 2023</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "Very satisfied with the work. I needed it fast, and Mamtaz helped to complete within the timeline. She is very cooperative and experienced developer. Highly recommended"
+                                    </p>
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $50
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-4 mb-4 review-card">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+                    <div>
+                        <img src="img/turing.jpg" alt="Site Icon" class="site-icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="font-weight-bold mt-2">
+                        Turing
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="modal" data-bs-target="#turing1" onclick="markOrder(this, 'turing1')">View Review Detail</button>  
+                    <!-- Modal -->
+                    <div class="modal fade" id="turing1" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5">Review Detail</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">                                    
+                                    <!-- Review Time -->
+                                    <h6 class="mb-2 text-muted">Dec 26, 2022 - Jan 5, 2023</h6>
+                                    <!-- Star Rating -->
+                                    <p>Rating:
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    </p>
+                                    <!-- Review Content -->
+                                    <p class="review-text mt-2">
+                                        "Mamtaz is very proficient with web development knowledge. Recommended for my next project. Thank you"
+                                    <!-- Price -->
+                                    <div class="review-price">
+                                        Price: $80
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<div class="my-5">
+</div>
+
+<div class="my-5">
+</div>
+
+<div class="my-5">
+</div>
+
+
+<script>
+    function expandBio() {
+        document.getElementById("shortBio").style.display = "none";
+        document.getElementById("fullBio").style.display = "block";
+    }
+    
+    function collapseBio() {
+        document.getElementById("shortBio").style.display = "block";
+        document.getElementById("fullBio").style.display = "none";
+    }
+
+    let clickCount = 0;
+    const orders = {};
+
+    function markOrder(element, id) {
+        clickCount++;
+        orders[id] = clickCount;
+
+        // Update UI to show the order number
+        element.innerHTML = `View Review Detail (${clickCount})`;
+        element.disabled = true;
+        // Optionally, display all orders in console or elsewhere
+        console.log(orders);
+    }
+
+    window.onload = function() {
+        var container = document.querySelector('.row.card-container');
+        var cards = Array.from(container.querySelectorAll('.col-md-4.mb-4.review-card'));
+        while (container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
+        cards.sort(function() { return 0.5 - Math.random() });
+        cards.forEach(function(card) {
+            container.appendChild(card);
+        });
+    };
+    
+</script>
+
+</body>
+</html>
