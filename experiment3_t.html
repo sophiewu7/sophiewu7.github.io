@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a54bad848a.js" crossorigin="anonymous"></script>
     <title>Mamtaz Akter - Developer Profile</title>
@@ -59,8 +60,8 @@
 
         .contact-fab {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 25px;
+            right: 30px;
             z-index: 100;
         }
 
@@ -108,7 +109,6 @@
     </div>
 </div>
 
-
 <div class="container-fluid pt-5 mx-auto">
 	<div class="row justify-content-center">
 		<div class="col-xl-7 col-lg-8 col-md-10 col-12 text-center mb-5">
@@ -129,22 +129,64 @@
                 <div class="col-md-9 d-flex flex-column justify-content-center">
                     <div class="rating-bar0 justify-content-center">
                         <table class="text-left mx-auto">
-                            <tr>
+                            <tr id="rowDelivery">
+                                <td class="rating-label">Delivery: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr id="rowWorkQuality">
+                                <td class="rating-label">Work Quality: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr id="rowCodingSkills">
+                                <td class="rating-label">Coding and Technical Skills: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr id="rowCommitment">
+                                <td class="rating-label">Commitment and Cooperation: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr id="rowCommunication">
                                 <td class="rating-label">Communication: </td>
                                 <td>
                                     <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                     5.0 
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="rating-label">Work Quality: </td>
+                            <tr id="rowOverallExperience">
+                                <td class="rating-label">Recommendation and Overall Experience: </td>
                                 <td>
-                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
-                                    4.98 
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="rating-label">Commitment and Cooperation: </td>
+                            <tr id="rowWorkExperience">
+                                <td class="rating-label">Pleasure to Work and Experience: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr id="rowSatisfaction">
+                                <td class="rating-label">Recommendation and Satisfaction: </td>
+                                <td>
+                                    <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    5.0 
+                                </td>
+                            </tr>
+                            <tr id="rowPositivity">
+                                <td class="rating-label">Overall Positivity: </td>
                                 <td>
                                     <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                     5.0 
@@ -199,8 +241,89 @@
 <div class="my-5">
 </div>
 
-
+<!-- Rating Categories Modal -->
+<div class="modal fade" id="ratingCategoriesModal" tabindex="-1" role="dialog" aria-labelledby="ratingCategoriesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ratingCategoriesModalLabel">Select Rating Categories</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Checkbox options for categories -->
+            <form id="ratingCategoriesForm">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Delivery" id="delivery">
+                    <label class="form-check-label" for="delivery">Delivery</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="WorkQuality" id="workQuality" checked>
+                    <label class="form-check-label" for="workQuality">Work Quality</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="CodingSkills" id="codingSkills">
+                    <label class="form-check-label" for="codingSkills">Coding and Technical Skills</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Commitment" id="commitment" checked>
+                    <label class="form-check-label" for="commitment">Commitment and Cooperation</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Communication" id="communication" checked>
+                    <label class="form-check-label" for="communication">Communication</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="OverallExperience" id="overallExperience">
+                    <label class="form-check-label" for="overallExperience">Recommendation and Overall Experience</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="WorkExperience" id="workExperience">
+                    <label class="form-check-label" for="workExperience">Pleasure to Work and Experience</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Satisfaction" id="satisfaction">
+                    <label class="form-check-label" for="satisfaction">Recommendation and Satisfaction</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Positivity" id="positivity">
+                    <label class="form-check-label" for="positivity">Overall Positivity</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="applyCategoryFilter()">Apply</button>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+  
 <script>
+
+    $(document).ready(function(){
+        $('#ratingCategoriesModal').modal('show');
+    });
+    
+    function applyCategoryFilter() {
+        console.log('applyCategoryFilter called'); // Check if function is called
+        var checkboxes = document.querySelectorAll('#ratingCategoriesForm input[type=checkbox]');
+        
+        checkboxes.forEach(function(checkbox) {
+            console.log(checkbox.id, checkbox.checked); // Check the status of each checkbox
+    
+            if (checkbox.checked) {
+                document.getElementById('row' + checkbox.value).style.display = '';
+            } else {
+                document.getElementById('row' + checkbox.value).style.display = 'none';
+            }
+        });
+    
+        $('#ratingCategoriesModal').modal('hide');
+    }
+    
+    
     // Mock function to simulate parsing CSV data
     function getReviewsFromCSV() {
         return [
@@ -410,5 +533,5 @@
     
 </script>
 
-</body>
+
 </html>
