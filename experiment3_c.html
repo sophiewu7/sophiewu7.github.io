@@ -149,11 +149,28 @@
 	</div>
 </div>
 
-<div class="container mt-5">
-    <input type="text" id="search-box" placeholder="Search reviews" onkeyup="searchReviews()" class="form-control mb-3">
-    <button onclick="sortReviews('date')">Sort by Date</button>
-    <button onclick="sortReviews('rating')">Sort by Rating</button>
-    <div id="review-section" class="row">
+<div class="container">
+    <div class="input-group mb-3">
+        <input type="text" id="search-box" placeholder="Search for keywords" onkeyup="searchReviews()" class="form-control">
+        <div class="input-group-append">
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </div>    
+    <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+            <label class="mr-sm-2" for="sort-select">Sort by:</label>
+        </div>
+        <div class="col-auto my-1">
+            <select id="sort-select" class="custom-select mr-sm-2" onchange="sortReviews(this.value)">
+                <option value="">Select...</option>
+                <option value="rating-asc">Lowest Rating to Highest Rating</option>
+                <option value="rating-desc">Highest Rating to Lowest Rating</option>
+            </select>
+        </div>
+    </div>    
+    <div id="review-section" class="row mt-4">
         <!-- Review cards will go here -->
     </div>
 </div>
@@ -326,18 +343,27 @@
     let reviews = getReviewsFromCSV();
     let sortedBy = '';
 
+    function getRatingClass(rating) {
+        if (rating >= 5) return 'badge-success';
+        if (rating >= 4) return 'badge-primary';
+        if (rating >= 3) return 'badge-info';
+        if (rating >= 2) return 'badge-warning';
+        return 'badge-danger';
+    }
+    
     function displayReviews(reviewsArray) {
         const reviewSection = document.getElementById('review-section');
         reviewSection.innerHTML = '';
         reviewsArray.forEach(review => {
+            const ratingClass = getRatingClass(review.rating);
             const reviewCard = `
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <div class="card-body text-right"> <!-- Text right-aligned -->
-                            <p class="card-text text-left mb-0">${review.review}</p> <!-- Text left-aligned, no bottom margin -->
-                            <p class="font-italic mb-0">From ${review.source}</p> <!-- No bottom margin -->
-                            <p class="text-muted mb-0">${review.date}</p> <!-- Grey text, no bottom margin -->
-                            <span class="badge badge-warning">${review.rating} Stars</span>
+                        <div class="card-body text-right">
+                            <p class="card-text text-left mb-2">${review.review}</p>
+                            <p class="font-italic mb-0">From ${review.source}</p>
+                            <p class="text-muted mb-0">${review.date}</p>
+                            <span class="badge ${ratingClass}">${review.rating} Stars</span>
                         </div>
                     </div>
                 </div>
@@ -345,19 +371,19 @@
             reviewSection.innerHTML += reviewCard;
         });
     }
+   
 
     function searchReviews() {
         const searchTerm = document.getElementById('search-box').value.toLowerCase();
-        const filteredReviews = reviews.filter(review => review.content.toLowerCase().includes(searchTerm));
+        const filteredReviews = reviews.filter(review => review.review.toLowerCase().includes(searchTerm));
         displayReviews(filteredReviews);
     }
 
-    function sortReviews(criteria) {
-        sortedBy = criteria;
+    function sortReviews(sortType) {
         reviews.sort((a, b) => {
-            if(criteria === 'date') {
-                return new Date(a.date) - new Date(b.date);
-            } else if(criteria === 'rating') {
+            if (sortType === 'rating-asc') {
+                return a.rating - b.rating;
+            } else if (sortType === 'rating-desc') {
                 return b.rating - a.rating;
             }
         });
