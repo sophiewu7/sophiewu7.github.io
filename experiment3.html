@@ -324,21 +324,26 @@
     });
     
     function applyCategoryFilter() {
-        console.log('applyCategoryFilter called'); // Check if function is called
         var checkboxes = document.querySelectorAll('#ratingCategoriesForm input[type=checkbox]');
+        var anyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
         
         checkboxes.forEach(function(checkbox) {
-            console.log(checkbox.id, checkbox.checked); // Check the status of each checkbox
-    
-            if (checkbox.checked) {
-                document.getElementById('row' + checkbox.value).style.display = '';
+            if (anyChecked) {
+                // If any checkboxes are checked, show/hide rows based on checkbox state
+                if (checkbox.checked) {
+                    document.getElementById('row' + checkbox.value).style.display = '';
+                } else {
+                    document.getElementById('row' + checkbox.value).style.display = 'none';
+                }
             } else {
-                document.getElementById('row' + checkbox.value).style.display = 'none';
+                // If no checkboxes are checked, show all rows
+                document.getElementById('row' + checkbox.value).style.display = '';
             }
         });
     
         $('#ratingCategoriesModal').modal('hide');
     }
+    
     
     
     // Mock function to simulate parsing CSV data
